@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="3.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TIC-TAC-TOE</h1>
+
+        <!-- Game Mode -->
+        <div class="mode-buttons">
+
+            <button id="playerMode" class="mode active">
+                2 Players
+            </button>
+
+            <button id="aiMode" class="mode">
+                Play vs AI
+            </button>
+
+        </div>
+
+
+        <!-- Status -->
+        <div class="status" id="status">
+            Player X's Turn
+        </div>
+
+
+        <!-- Game Board -->
+        <div class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+
+        <!-- Result -->
+        <div id="result"></div>
+
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+
+            <div>
+                <span>X</span>
+                <strong id="xScore">0</strong>
+            </div>
+
+            <div>
+                <span>Draws</span>
+                <strong id="drawScore">0</strong>
+            </div>
+
+            <div>
+                <span>O</span>
+                <strong id="oScore">0</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Reset -->
+        <button id="resetBtn" class="reset">
+            New Game
+        </button>
+
+    </div>
+
+
+    <script src="3.js"></script>
+
+</body>
+
+</html>
